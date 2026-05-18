@@ -3,31 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Mitt spel - Nexari</title>
+  <title>ERA TimeBattle - Argu Games</title>
+  <link rel="stylesheet" href="../style.css">
 
   <style>
-
-    body {
-      margin: 0;
-      background: #0f172a;
-      overflow: hidden;
+    .game-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
     }
 
-    iframe {
-      width: 100vw;
-      height: 100vh;
+    .game-frame {
+      width: 100%;
+      height: 75vh;
       border: none;
+      border-radius: 16px;
+      background: #000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     }
 
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .game-title {
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 
 <body>
+  <header>
+    <div class="logo">Argu Games</div>
+    <nav>
+      <a href="../index.html">Hem</a>
+      <a href="../contact.html">Kontakt</a>
+    </nav>
+  </header>
 
-  <iframe
-    src="https://era-timebattle.lovable.app">
-  </iframe>
+  <main class="game-page">
+    <a class="back-link" href="../index.html">← Tillbaka</a>
 
+    <h1 class="game-title">ERA TimeBattle</h1>
+
+    <iframe
+      class="game-frame"
+      src="https://era-timebattle.lovable.app"
+      allowfullscreen>
+    </iframe>
+  </main>
 </body>
 </html>
